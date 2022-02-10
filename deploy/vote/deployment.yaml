@@ -1,4 +1,4 @@
-apiVersion: apps/v1
+piVersion: apps/v1
 kind: Deployment
 metadata:
   creationTimestamp: null
@@ -6,7 +6,7 @@ metadata:
     app: vote
   name: vote
 spec:
-  replicas: 3
+  replicas: 4
   selector:
     matchLabels:
       app: vote
