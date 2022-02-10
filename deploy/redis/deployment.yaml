@@ -18,6 +18,6 @@ spec:
         app: redis
     spec:
       containers:
-      - image: redis/alpine
-        name: alpine
+      - image: redis
+        name: redis
         resources: {}
