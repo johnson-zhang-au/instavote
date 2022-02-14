@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-app: vote
+    app: vote
   name: vote
 spec:
   replicas: 5
