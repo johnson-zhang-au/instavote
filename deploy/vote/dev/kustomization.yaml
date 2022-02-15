@@ -4,3 +4,9 @@ resources:
 - ../base
 patchesStrategicMerge:
 - deployment.yaml
+- service.yaml
+configMapGenerator:
+  - name: vote
+    literals:
+      - OPTION_A=FluxCD
+      - OPTION_B=ArgoCD
