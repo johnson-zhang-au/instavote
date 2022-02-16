@@ -18,7 +18,7 @@ spec:
         app: vote
     spec:
       containers:
-      - image: githubidjz/vote:v1
+      - image: dockeridjz/vote:v1
         name: vote
         resources: {}
         envFrom:
