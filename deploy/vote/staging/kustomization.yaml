@@ -7,18 +7,18 @@ patchesStrategicMerge:
 - service.yaml
 namespace: instavote
 images:
-  - name: githubidjz/vote
-    newTag: v6 # {"$imagepolicy": "flux-system:vote:tag"}
+- name: githubidjz/vote
+  newTag: main-15b60b54-1644973989 # {"$imagepolicy": "flux-system:vote:tag"}
 replicas:
-  - name: vote
-    count: 4
+- name: vote
+  count: 4
 commonLabels:
   project: instavote
   env: staging
 commonAnnotations:
   supported-by: "sre@example.com"
 configMapGenerator:
-  - name: vote
-    literals:
-      - OPTION_A=STAGING
-      - OPTION_B=DEV
+- name: vote
+  literals:
+  - OPTION_A=STAGING
+  - OPTION_B=DEV
